@@ -105,7 +105,7 @@
           .promo { order: 2; }
           .panel { order: 1; }
         }
-  /* problems table */
+  /* problems table */      
   /* ---------- Home / Problems Table ---------- */
 .home {
     margin-top: 20px;
@@ -123,7 +123,7 @@
     padding: 8px;
     text-align: left;
 }
-  /* problems table end */
+  /* problems table end */  
     </style>
 </head>
 <body>
@@ -203,12 +203,12 @@
     <h2>Welcome!</h2>
     <table id="problemsTable">
         <thead>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Difficulty</th>
-            <th>Score</th>
-        </tr>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Difficulty</th>
+                <th>Score</th>
+            </tr>
         </thead>
         <tbody></tbody>
     </table>
@@ -331,8 +331,8 @@
       } else {
         showMessage("Failed to load problems");
       }
-    }
-
+    } 
+    
     catch (err) {
       showMessage("Network error: " + err.message);
     }
@@ -356,7 +356,7 @@
 }
 
 
-
+    
 
     // -------------- check token & call protected api --------------
     // document.getElementById('tokenCheck').addEventListener('click', async (e) => {

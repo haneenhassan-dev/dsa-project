@@ -21,7 +21,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf-> csrf.disable()) // stateless REST API, using JWT
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**", "/", "/index.html", "/login.html", "/register.html").permitAll() // allow register/login
+                        .requestMatchers("/auth/**", "/", "/index.html", "/login.html", "/register.html").permitAll()  // allow register/login
                         .anyRequest().authenticated()            // require auth for others
                 );
 
